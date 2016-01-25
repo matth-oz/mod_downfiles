@@ -18,7 +18,8 @@
 		<filename>index.html</filename>	
 	</files>
 	<languages>
-		<language tag="ru-Ru">language/ru-RU/ru-Ru.mod_downfiles.ini</language>		
+		<language tag="ru-Ru">language/ru-RU/ru-RU.mod_downfiles.ini</language>	
+		<language tag="ru-Ru">language/ru-RU/ru-RU.mod_downfiles.sys.ini</language>			
 	</languages>
 	<config>
 		<fields name="params">
