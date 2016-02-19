@@ -24,7 +24,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field type="text" name="count" default="3" label="MOD_DOWNFILES_FIELDCOUNT_LABEL" description="MOD_DOWNFILES_FIELDCOUNT_DESC" />
+				<field type="text" name="count" default="0" label="MOD_DOWNFILES_FIELDCOUNT_LABEL" description="MOD_DOWNFILES_FIELDCOUNT_DESC" />
 				<field type="editor" name="textbefore" label="MOD_DOWNFILES_FIELDTEXTBEFORE_LABEL" description="MOD_DOWNFILES_FIELDTEXTBEFORE_DESC" width="300" filter="safehtml" />
 			</fieldset>
 			<fieldset name="advanced">

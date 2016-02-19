@@ -3,14 +3,23 @@ defined('_JEXEC') or die;
 
 class mod_downfilesHelper{
     public static function getList(&$params){
-        $db = JFactory::getDbo();
+       
+		$db = JFactory::getDbo();
         $query = $db->getQuery(true);
 
         $query->select('`id`, `filename`, `file_desc`, `file_size`');
         $query->from('#__downfiles');
         $query->where('published = "1"');
-       
-        $db->setQuery($query, 0, $params->get('count', 5));
+		
+		/*кол-во ссылок в компоненте*/
+		$itemQuant = $params->get('count');
+		
+		if($itemQuant == 0){
+			$db->setQuery($query);
+		}
+		else{
+			$db->setQuery($query, 0, $params->get('count', 3));
+		}        
        
         try
         {
